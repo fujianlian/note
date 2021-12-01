@@ -30,16 +30,13 @@
   sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer/
   ~~~
 
-- [!] Unable to find a specification for `Bugly` depended upon by `flutter_bugly`
+- **Unable to find a specification for `...` depended upon by `...`**
 
-  You have either:
-   * out-of-date source repos which you can update with `pod repo update` or with `pod install --repo-update`.
-   * mistyped the name or version.
-   * not added the source repo that hosts the Podspec to your Podfile.
+  在iOS 目录 Podfile 中注释掉以下文本或者尝试设置代理
 
-  ~~~
-  
-  ~~~
+  ```text
+  source 'https://github.com/CocoaPods/Specs.git'
+  ```
 
   
 
