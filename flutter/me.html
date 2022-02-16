@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Build ios · GitBook</title>
+        <title>Me · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="me.html" />
     
-    
-    <link rel="prev" href="../" />
+    <link rel="prev" href="ios.html" />
     
 
     </head>
@@ -103,7 +101,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="ios.html">
+        <li class="chapter " data-level="1.1.1" data-path="ios.html">
             
                 <a href="ios.html">
             
@@ -116,7 +114,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2" data-path="me.html">
+        <li class="chapter active" data-level="1.1.2" data-path="me.html">
             
                 <a href="me.html">
             
@@ -209,7 +207,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Build ios</a>
+        <a href=".." >Me</a>
     </h1>
 </div>
 
@@ -224,26 +222,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="ios-&#x7F16;&#x8BD1;&#x9519;&#x8BEF;">IOS &#x7F16;&#x8BD1;&#x9519;&#x8BEF;</h2>
+                                <h2 id="me&#x5E38;&#x89C1;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;">Me&#x5E38;&#x89C1;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;</h2>
 <ul>
-<li><p><strong>The &apos;Pods-Runner&apos; target has transitive dependencies that include statically linked binaries:..</strong></p>
-<p>&#x65B9;&#x6848;&#x4E00;&#xFF1A;</p>
-<p>&#x5728;&#x62A5;&#x9519;&#x7684;&#x63D2;&#x4EF6;xxx_plugin&#x4E2D;&#x7684;iOS&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x627E;&#x5230;xxx_plugin.podspec&#x6587;&#x4EF6;&#x5E76;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code class="lang-text">s.static_framework = true
-</code></pre>
-<p>&#x65B9;&#x6848;&#x4E8C;&#xFF08;&#x4E0D;&#x63A8;&#x8350;&#xFF09;&#xFF1A;</p>
-<p>&#x4E0D;&#x786E;&#x5B9A;&#x662F;&#x5426;&#x4F1A;&#x6709;&#x5176;&#x4ED6;&#x5751;&#xFF0C;&#x6709;&#x7684;&#x80FD;&#x89E3;&#x51B3;&#xFF0C;&#x6709;&#x7684;&#x4E0D;&#x80FD;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x65B9;&#x6848;&#x4E00;&#xFF1B;</p>
-<p>&#x5728;iOS &#x76EE;&#x5F55; Podfile &#x4E2D;&#x589E;&#x52A0;&#xFF1A;</p>
-<pre><code class="lang-objective-c">pre_install do |installer|
-  Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
-end
+<li><p><strong>Android&#x7F16;&#x8BD1;&#x62A5;google service couldn&apos;t get 502</strong></p>
+<p><img src="../images/error1.png" alt="alt &#x5C5E;&#x6027;&#x6587;&#x672C;"></p>
+<p>gradle&#x7248;&#x672C;&#x5347;&#x7EA7;</p>
+<pre><code class="lang-groovy">buildscript {
+    dependencies {
+        classpath <span class="hljs-string">&apos;com.android.tools.build:gradle:4.1.0&apos;</span>
+    }
+}
 </code></pre>
 </li>
 </ul>
-<p>&#x200B;       &#x53C2;&#x7167;&#xFF1A;<a href="https://zhuanlan.zhihu.com/p/363551822" target="_blank">https://zhuanlan.zhihu.com/p/363551822</a></p>
 <ul>
-<li><p><strong>Cannot find &quot;xcodebuild&quot;. Xcode 11.0.0 or greater is required to develop for iOS</strong></p>
-<pre><code class="lang-bash">sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer/
+<li><p><strong>IOS pod install &#x5361;&#x5728; download <a href="https://github.com/CocoaPods/Specs.git" target="_blank">https://github.com/CocoaPods/Specs.git</a></strong></p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> .cocoapods/repos &amp;&amp; rm -rf master
+$ git <span class="hljs-built_in">clone</span> https://github.com/CocoaPods/Specs.git master
+</code></pre>
+<p>&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#x540E;</p>
+<pre><code class="lang-bash">$ pod repo update
 </code></pre>
 </li>
 </ul>
@@ -274,14 +272,10 @@ end
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Flutter">
+                <a href="ios.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Build ios">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="me.html" class="navigation navigation-next " aria-label="Next page: Me">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -290,7 +284,7 @@ end
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Build ios","level":"1.1.1","depth":2,"next":{"title":"Me","level":"1.1.2","depth":2,"path":"flutter/me.md","ref":"flutter/me.md","articles":[]},"previous":{"title":"Flutter","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Build ios","level":"1.1.1","depth":2,"path":"flutter/ios.md","ref":"flutter/ios.md","articles":[]},{"title":"Me","level":"1.1.2","depth":2,"path":"flutter/me.md","ref":"flutter/me.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flutter/ios.md","mtime":"2022-02-16T07:07:57.082Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-16T07:08:11.310Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Me","level":"1.1.2","depth":2,"next":{"title":"Alaya","level":"1.2","depth":1,"ref":"","articles":[{"title":"部署","level":"1.2.1","depth":2,"path":"alaya/deploy.md","ref":"alaya/deploy.md","articles":[]},{"title":"常见问题","level":"1.2.2","depth":2,"path":"alaya/FAQ.md","ref":"alaya/FAQ.md","articles":[]}]},"previous":{"title":"Build ios","level":"1.1.1","depth":2,"path":"flutter/ios.md","ref":"flutter/ios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flutter/me.md","mtime":"2022-02-16T07:06:57.738Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-16T07:08:11.310Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
